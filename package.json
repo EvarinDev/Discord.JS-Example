@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc-watch --onSuccess \"cross-env NODE_ENV=development node dist/index.js\" --onFailure \"echo 'Build failed'\"",
+    "build": "npx tsc -p .",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "lint": "npx eslint . --ext .ts",
+    "lint:fix": "npx eslint . --ext .ts --fix"
+  },
+  "author": "FAYStarNext",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "discord.js": "^14.14.1",
+    "tsc-watch": "^6.2.0"
+  }
+}
