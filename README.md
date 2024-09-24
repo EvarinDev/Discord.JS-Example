@@ -4,7 +4,7 @@ This is an example project for using Discord.JS library.
 
 ## Installation
 
-1. Clone this repository `git clone https://github.com/FAYStarNext/Discord.JS-Example && cd Discord.JS-Example`
+1. Clone this repository `git clone https://github.com/EvarinDev/Discord.JS-Example && cd Discord.JS-Example`
 2. Run `npm install` to install the dependencies.
 
 ## Usage
