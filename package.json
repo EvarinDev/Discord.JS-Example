@@ -11,8 +11,6 @@
     "lint": "npx eslint . --ext .ts",
     "lint:fix": "npx eslint . --ext .ts --fix"
   },
-  "author": "FAYStarNext",
-  "license": "MIT",
   "devDependencies": {
     "eslint": "^9.0.0",
     "typescript": "^5.4.4"
