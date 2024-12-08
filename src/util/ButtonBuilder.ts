@@ -1,10 +1,10 @@
 import {
-    ApplicationCommandData,
+    ButtonInteraction,
     ChatInputCommandInteraction,
 } from "discord.js";
 import { Discord } from "../Client/Discord";
 
-export class CommandBuilder {
+export class ButtonBuilder {
   constructor(option: SlashCommandOptions) {
     this.data = option.data;
     this.run = option.run;
@@ -14,9 +14,9 @@ export class CommandBuilder {
 }
 
 export type SlashCommandOptions = {
-    data: ApplicationCommandData;
+    data: string;
     run: (
         client: Discord,
-        interaction: ChatInputCommandInteraction,
+        interaction: ButtonInteraction,
     ) => Promise<void | any>;
 };
